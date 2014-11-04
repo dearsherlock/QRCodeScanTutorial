@@ -30,15 +30,15 @@
              android:layout_gravity="center_horizontal"
              android:scaleType="center"
              android:contentDescription="@string/barcode_image"/>
-
-  <ScrollView android:layout_width="fill_parent"
+<!--
+    <ScrollView android:layout_width="fill_parent"
               android:layout_height="wrap_content"
               android:layout_gravity="center_horizontal"
               android:gravity="center">
-
-    <TextView android:id="@+id/contents_text_view"
+-->
+    <EditText android:id="@+id/contents_text_viewText"
               android:layout_width="fill_parent"
-              android:layout_height="wrap_content"
+        android:layout_height="wrap_content"
               android:layout_gravity="center_horizontal"
               android:gravity="center"
               android:textColor="@color/contents_text"
@@ -46,7 +46,13 @@
               android:paddingBottom="8dip"
               android:paddingLeft="8dip"
               android:paddingRight="8dip"/>
-
+<!--
   </ScrollView>
+    -->
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="250px"
+        android:text="New Button"
+        android:id="@+id/button3" android:onClick="GenerateQRCode" />
 
 </LinearLayout>
